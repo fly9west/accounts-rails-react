@@ -1,0 +1,12 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: accounts_rails_react_development
+
+test:
+  <<: *default
+  database: accounts_rails_react_test
